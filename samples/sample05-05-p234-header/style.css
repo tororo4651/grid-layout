@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* ================
+
+レイアウトの設定
+
+================ */
+
+
+
+/* ここから */
+
+/* ヘッダー */
+.header {
+  padding: 16px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns:
+    auto 1fr;
+	gap: 8px;
+	align-items: center;
+
+	/* タップターゲットを拡張 */
+	.action,
+	.nav a {
+		padding: 12px;
+	}
+}
+
+/* ここまで */

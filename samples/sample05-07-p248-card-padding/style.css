@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* ================
+
+レイアウトの設定
+
+================ */
+
+
+
+/* ここから */
+
+/* カード01（ position とグリッドの組み合わせ） */
+.card-01-position {
+  position: relative;
+  height: 200px;
+  padding: 8px;
+	display: grid;
+	grid-template:
+		"photo photo photo" 1fr  /* ？ ". . ." */
+		". . ." 8px
+		"avatar . title" auto
+		"avatar . subtitle" auto
+		/ auto 8px 1fr;
+
+
+	/* 行のトラックサイズ確定の処理から画像を除外 */
+  /* ？ 省略 可（ .img-fill が指定されているから。） */
+	> .photo {
+		height: 0;
+		min-height: 100%;
+	}
+
+
+	/* アイテムの配置先 */
+	> .photo {
+		position: absolute;
+		grid-column: auto;
+		grid-row: auto / 2;
+	}
+
+	> .title {
+		grid-area: title;
+	}
+
+	> .subtitle {
+		grid-area: subtitle;
+	}
+
+	> .avatar {
+		grid-area: avatar;
+		align-self: center;
+	}
+}
+
+/* ここまで */
