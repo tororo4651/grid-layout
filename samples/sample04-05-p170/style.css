@@ -6,17 +6,19 @@
 
 ================ */
 
+
+
 /* ここから */
 
 div {
+	border: solid 2px black;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 48px;
-	border: solid 2px black;
 }
 
 span {
-	font-family: "Gloria Hallelujah", cursive;
 	background-color: yellow;
+	font-family: "Gloria Hallelujah", cursive;
 }
 
 /* ここまで */
